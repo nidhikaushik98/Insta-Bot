@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LogOut" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inConfig" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>408,680</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>LogOut_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="18">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LogOut" sap:VirtualizedContainerService.HintSize="418,575" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="376,483" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="user" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="473c8b19-fb2d-4fb3-8a7b-c2d6e94ecd38" InformativeScreenshot="530cdd3b0967421b0b7ab1e6f32b825a" Selector="&lt;html app='chrome.exe' title='* ?? (*) • Instagram photos and videos' /&gt;&lt;webctrl aaname='nidhi_kaushik_&amp;apos;s profile picture' tag='IMG' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Kylie'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60447f60-d8f7-4797-a280-9104d609a231" Selector="&lt;html app='chrome.exe' title='Kylie ?? (@kyliejenner) • Instagram photos and videos' /&gt;&lt;webctrl aaname='nidhi_kaushik_&amp;apos;s profile picture' tag='IMG' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b8645e5d-0586-408b-a7c6-57304adb4baa" InformativeScreenshot="c1a2cc5fa6db3fc6497dd878a519ea5d" Selector="&lt;html app='chrome.exe' title='* ?? (*) • Instagram photos and videos' /&gt;&lt;webctrl aaname='Log Out' omit:parentid='*' tag='DIV' class='*   ' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' innertext='Log Out' omit:isleaf='*' parentclass=' *                                                                      ' title='* (*) • Instagram photos and videos' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+    </Sequence>
+  </Sequence>
+</Activity>
